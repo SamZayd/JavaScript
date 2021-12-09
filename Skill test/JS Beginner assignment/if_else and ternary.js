@@ -1,4 +1,4 @@
-//WAP to check if a nummber is divisible by 7 or not
+//1. WAP to check if a number is divisible by 7 or not
 a=77;
 
 if(a%7 == 0){
@@ -8,7 +8,7 @@ else{
 	console.log("False");
 }
 
-//WAP to check if a nummber is multiple of 3 or not
+//2. WAP to check if a number is multiple of 3 or not
 b= 27
 
 if(b%3==0){
@@ -18,7 +18,7 @@ else{
 	console.log("False")
 }
 
-//WAP to check if a nummber is positive or not
+//3. WAP to check if a number is positive or not
 c= 2/7
 
 if(c > 0){
@@ -28,39 +28,43 @@ else{
 	console.log("False")
 }
 
-//WAP to check if a nummber is having 4 at the unit's place or not
-// d= 27
+//4. WAP to check if a number is having 4 at the unit's place or not
 
-// if(d){
-// 	console.log("Multiple of 3")
-// }
-// else{
-// 	console.log("False")
-// }
+d= 24
 
-//WAP to check if a nummber is 3-digit number or not
+da= d%10
+if(da == 4){
+    console.log("Number have 4 in its unit's place")
+}
+else{
+    console.log("Unit's place digit is ",da)
+}
+
+
+
+//5. WAP to check if a number is 3-digit number or not
 e= 277
 
 e<999 && e>100 ? console.log(e," is 3-Digit Number") : console.log("False")
 
 
-//WAP to check if a nummber is even or odd
+//6. WAP to check if a number is even or odd
 f= 2212
 
 f%2 == 0 ? console.log(f," is Even Number") : console.log("Odd Number")
 
-//WAP to check is which number  is greater 
+//7. WAP to check is which number  is greater 
 
 g1 =44
 g2 =54
 
 g1>g2 ? console.log(g1,"Is Greater") : console.log(g2,"Is Greater")
 
-//WAP to check is which number is least
+//8. WAP to check is which number is least
 
 g1<g2 ? console.log(g1," Is Smaller") : console.log(g2," Is Smaller")
 
-//WAP to check the greatest number in 3 Numbers
+//9. WAP to check the greatest number in 3 Numbers
 g3 =86
 var great;
 g1>g2 ? great = g1 : great =g2 
@@ -81,41 +85,74 @@ else{
 	console.log(great," is greatest.")
 }
 
-//WAP to check the least number in 3 Numbers
+//10. WAP to check the least number in 3 Numbers
 
 g1>g2 ? least= g2 : least= g1
 least>g3 ? console.log(g3," is least.") : console.log(least,"is least")
 
-//WAP 3 no's in ascening order 
+//11. WAP 3 no's in ascening order 
 x=61
 y=42
 z=31
 console.log("Ascending order")
-if (x < y && x < z) {
+if(x<y && x<z){
     console.log(x);
-    if (y < z) {
+    if(y<z){
         console.log(y);
         console.log(z);
-    } else {                  
+    }else{                  
         console.log(z);
         console.log(y);
     }
-} else if (y < z && y < x) {
+}else if(y<z && y<x){
     console.log(y);
-    if (z < x) {
+    if(z<x){
         console.log(z);
         console.log(x);
-    } else {                  
+    }else{                  
         console.log(x);
         console.log(z);
     }
-} else {                      
+} else{                      
     console.log(z);        
-    if (x < y) {
+    if(x<y){
         console.log(x);
         console.log(y);
-    } else {                 
+    } else{                 
         console.log(y);
         console.log(x);
     }
 }
+
+// 12. WAP 3 no's in descening order 
+console.log("descending order")
+if(x>y && x>z){
+    console.log(x);
+    if(y>z){
+        console.log(y);
+        console.log(z);
+      }
+    else{
+        console.log(z);
+        console.log(y);
+    }
+}else if(y>x && y>z){
+    console.log(y);
+    if(x>z){
+        console.log(x);
+        console.log(z);
+    }
+    else{
+        console.log(z);
+        console.log(x);
+    }
+}else{
+    console.log(z);
+    if(x>y){
+        console.log(x);
+        console.log(y);
+    }else{
+        console.log(y);
+        console.log(z);
+    }
+} 
