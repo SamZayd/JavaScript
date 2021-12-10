@@ -92,7 +92,7 @@ least>g3 ? console.log(g3," is least.") : console.log(least,"is least")
 
 //11. WAP 3 no's in ascening order 
 x=61
-y=42
+y=81
 z=31
 console.log("Ascending order")
 if(x<y && x<z){
