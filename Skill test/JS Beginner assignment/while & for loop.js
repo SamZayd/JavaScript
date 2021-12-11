@@ -113,7 +113,7 @@ for(let i=1; i<=p; i++){
 
 //13. WAP to find the number is armstrong number or not.
 
-arm=153
+arm=153                                 //153 <=armstrong=> 1*1*1 + 5*5*5 + 3*3*3
 console.log("\nArmstrong Number");
 let temp=arm, rem=0, sum=0;
 while(temp>0){
