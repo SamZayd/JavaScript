@@ -78,12 +78,51 @@ while(i<=ia){
 
 //10. WAP to print reverse of a digit of numbers
 
-// console.log("\n reverse of a digit")
+console.log("\n reverse of a digit")
 
-// let rev=0, rem, num=122443613, n=num;
-// while(n != 0){
-//     rem=n%10;
-//     rev=rev*10+rem;
-//     n=n/10;
-// }
-   
+let rev=0, rem, num=1613, n=num;
+while(n>0){
+    rem=n%10;
+    rev=rev*10+rem;
+    n=parseInt(n/10);       //parseInt used to convert float into Int
+ }
+console.log(rev);
+
+//11. WAP to read 5 numbers and print even.
+
+o=[4,6,5,3,8,9]
+console.log("\nfind even among 5");
+for(v=0; v < o.length; v++){
+    if(o[v]%2 == 0){
+        console.log(o[v],"found");
+    }
+}
+
+//12. WAP to print fibonacci numbers upto given number.
+
+p=17
+let q=0,r=1,s=0;
+console.log("\nFibonacci number");
+
+for(let i=1; i<=p; i++){
+    console.log(q);     
+    s=q+r;              //0 <== 0+1        //1 <== 1+1          //2 <== 1+2        //3 <== 2+3
+    q=r                 //(0) <== 1        //(1) <== 1          //(1) <== 2        //(2) <== 3
+    r=s                 //1 <== 1          //1 <== 2            //2 <== 3          //3 <== 5
+}
+
+//13. WAP to find the number is armstrong number or not.
+
+arm=153
+console.log("\nArmstrong Number");
+let temp=arm, rem=0, sum=0;
+while(temp>0){
+    rem=temp%10;
+    sum=sum+(rem*rem*rem)
+    temp=parseInt(temp/10);
+}
+if(arm == sum){
+    console.log(arm," is armstrong number");
+}else{
+    console.log(arm," is not armstrong number"); 
+}
