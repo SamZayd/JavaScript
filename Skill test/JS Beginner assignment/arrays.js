@@ -51,7 +51,10 @@ console.log("push ",array);
 console.log("Array is ",array);
 
 array.splice(2,2)   //start from 2 & remove 2 elements
-console.log("splice ",array);
+console.log("splice 2,2",array);
+
+x=array.slice(1,3)      //holds the element to different variable doesn't removes from original 
+console.log("Slice 1,3",x);
 
 delete array[2]
 console.log("After Delete [2] ",array);
