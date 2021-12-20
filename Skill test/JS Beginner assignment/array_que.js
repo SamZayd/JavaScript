@@ -103,10 +103,12 @@ let z=f;
 console.log("z is ",z);
 
 //17. Javascript array copy data vs copy reference
-console.log("\nIs y==z ?");        //check if value of y & z are equal 
-(y==z) ? console.log(true) : console.log(false)
-console.log("\nIs y===z ?");       //check if value of y & z are equal and of similar type  
-(y===z) ? console.log(true) : console.log(false)
+console.log("\nIs y==f ?");        //check if value of y & z are equal 
+console.log(y==f);                 //returns false coz ==compares links to array object not array themselves. & slice() creates copy of an array but when checked by element it will return true
+console.log("\nIs z==f ?");        
+console.log(z==f);                 //true coz both the elements are same and array object is the copy of each other.
+console.log("\nIs z===f ?");       
+console.log(z===f);
 
 //18. Javascript use of indexOf method
 

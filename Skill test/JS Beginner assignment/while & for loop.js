@@ -115,9 +115,9 @@ for(let i=1; i<=p; i++){
 
 arm=153                                 //153 <=armstrong=> 1*1*1 + 5*5*5 + 3*3*3
 console.log("\nArmstrong Number");
-let temp=arm, rem=0, sum=0;
+let temp=arm, remain=0, sum=0;
 while(temp>0){
-    rem=temp%10;
+    remain=temp%10;
     sum=sum+(rem*rem*rem)
     temp=parseInt(temp/10);
 }
