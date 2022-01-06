@@ -1,4 +1,4 @@
-![SamZayd HTML BG gif](https://github.com/SamZayd/HTML-CSS/blob/main/readme%20file/BG%20nova.gif)
+![SamZayd HTML BG gif](https://github.com/SamZayd/JavaScript/blob/master/readme%20file/ezgif.com-gif-maker.gif)
 <h1 align='center'> Hi! :wave:</h1>
 <p align='center'>
 I'm SamZayd
