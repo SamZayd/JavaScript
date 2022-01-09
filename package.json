@@ -1,5 +1,24 @@
 {
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "chart.js": "^3.7.0"
-  }
+  },
+  "name": "javascript",
+  "description": "![SamZayd HTML BG gif](https://github.com/SamZayd/JavaScript/blob/master/readme%20file/ezgif.com-gif-maker.gif)\r <h1 align='center'> Hi! :wave:</h1>\r <p align='center'>\r I'm SamZayd\r </p>\r <p align='center'>\r Hey there, Wanna know more about me... <a href=\"https://www.linkedin.com/in/sadaf-khan-2a443912a/\"><img height=\"30\" src=\"https://github.com/SamZayd/HTML-CSS/blob/main/readme%20file/linkedin.png?raw=true\"></a>\r <a href=\"https://www.instagram.com/sam_zayd/\"><img height=\"30\" src=\"https://github.com/SamZayd/HTML-CSS/blob/main/readme%20file/instagram.png?raw=true\"></a>\r </p>\r <h1 align='center'><i>Stay awesome!</i></h1>",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamZayd/JavaScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamZayd/JavaScript/issues"
+  },
+  "homepage": "https://github.com/SamZayd/JavaScript#readme"
 }
