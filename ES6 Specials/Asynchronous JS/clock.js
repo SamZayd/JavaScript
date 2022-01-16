@@ -1,38 +1,47 @@
-function secs(){
-    mins()
-    hrs()
-    let i= 0;
-    x=setInterval(()=>{
-    console.log(i,"Seconds");
-    i=i+1;
-    if(i==60){
-        clearInterval(x);
-        secs()
-    }
-    },1000)
-}
 
-function mins(){
-    let j= 0;
-    y=setInterval(()=>{
-    console.log(j,"Minutes");
-    j++;
-    if(j==60){
-        clearInterval(y);
-        mins()
-    }
-    },60000)
-}
+const time = () => {
+    const current = new Date();
+        
+    let hrs= current.getHours();
+    let min= current.getMinutes();
+    let sec= current.getSeconds();
+    let mer= "AM";
 
-function hrs(){
-    let k=  1;
-    z=setInterval(()=>{
-    console.log(k,"Hours");
-    k++;
-    if(k==12){
-        clearInterval(z);
-        hrs()
+    if (hrs == 00){
+        hrs = 12
+        mer ='AM';
     }
-    },3600000)
+    else if(hrs == 12){
+        mer ='PM';
+    }
+    else if(hrs > 12)
+    {
+        hrs = hrs-12
+        mer ='PM';
+    }
+
+
+    if (sec<10){
+        sec="0"+sec;    
+    }
+
+    if (min<10){
+        min="0"+min;
+    }
+    
+    if (hrs<10){
+        hrs="0"+hrs;
+    } 
+    console.log(hrs,":",min,":",sec,"  ",mer);
+
+    hour.innerHTML=`${hrs}`;
+    minute.innerHTML=`${min}`;
+    second.innerHTML =`${sec}`;
+    merediem.textContent =`${mer}`;
 }
-secs()
+setInterval(time,1000)
+
+const hour= document.getElementById("hours");
+const minute=document.getElementById("minutes");
+const second=document.getElementById("seconds");
+const merediem=document.getElementById("merediem");
