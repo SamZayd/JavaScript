@@ -19,4 +19,4 @@ let get_employee=()=>{
         document.getElementById("data").innerHTML=rows;
     },1000)//to print data after 1 second for the reference of getting data from DataBase
 }
-create_employee({id:103, name: "Hashira", sal: 50000},get_employee)
+create_employee({id:103, name: "Hashira", sal: 50000},get_employee)//get_employee is a refernce here not function

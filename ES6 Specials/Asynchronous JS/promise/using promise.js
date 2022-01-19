@@ -5,7 +5,7 @@ let create_employee=(emp)=>{
         let sam = true;
     setTimeout(()=>{
         employees.push(emp)
-        sam ? resolve("data inserted successfully"): reject("")
+        sam ? resolve("data inserted successfully"): reject("Data is rejected")
     },3000);// reference to save the data on Database takes around 3 seconds   
     })
 }
